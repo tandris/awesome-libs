@@ -28,7 +28,11 @@ defmodule AwesomeLibs.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:httpoison, "~> 0.8.3"}
+      {:httpoison, "~> 0.8.3"},
+      {:poison, "~> 2.0"},
+      {:ex_doc, "~> 0.11"},
+      {:earmark, ">= 0.0.0"},
+      { :uuid, "~> 1.1" }
     ]
   end
 end

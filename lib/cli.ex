@@ -5,6 +5,8 @@ defmodule AwesomeLibs.CLI do
   Return a tuple of {mode, filter} where mode can :category or :library or :help if help was given
   """
 
+  require Logger
+
   def parse_args(argv) do
     parsed = OptionParser.parse(argv,
     switches: [help: :boolean, library: :boolean, category: :boolean],
